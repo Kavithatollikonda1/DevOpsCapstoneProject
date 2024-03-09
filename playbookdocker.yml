@@ -24,6 +24,7 @@
       pip:
         name: docker
         state: present
+        extra_args: "--user"
     - name: Pull Docker image
       docker_image:
         name: "{{ image_name }}"
